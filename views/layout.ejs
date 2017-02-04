@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%=typeof title == 'undefined' ? 'New Sails App' : title%></title>
+
+    <!-- Viewport mobile tag for sensible mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+    <!--STYLES-->
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/importer.css">
+    <!--STYLES END-->
+  </head>
+
+  <body ng-app="app">
+    <%- body %>
+
+
+
+
+    <!--TEMPLATES-->
+    <script type="text/javascript" src="/jst.js"></script>
+    <!--TEMPLATES END-->
+
+
+    <!--SCRIPTS-->
+    <script src="/js/dependencies/sails.io.js"></script>
+    <script src="/js/dependencies/angular.js"></script>
+    <script src="/js/dependencies/jquery.js"></script>
+    <script src="/js/dependencies/angular-ui-router.js"></script>
+    <script src="/js/dependencies/ui-bootstrap-tpls.min.js"></script>
+    <script src="/js/angular/app.js"></script>
+    <script src="/js/angular/routes.js"></script>
+    <script src="/js/angular/controllers/base_controller.js"></script>
+    <script src="/js/angular/directives/base_directive.js"></script>
+    <script src="/js/angular/services/base_service.js"></script>
+    <!--SCRIPTS END-->
+  </body>
+</html>
